@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Translation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .card-header {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .form-control {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">Text Translation</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="text">Enter Text:</label>
+                            <textarea class="form-control" id="text" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="targetLanguage">Select Target Language:</label>
+                            <select class="form-control" id="targetLanguage">
+                                <option value="en">English</option>
+                                <option value="fr">French</option>
+                                <option value="es">Spanish</option>
+                                <option value="de">German</option>
+                                <option value="zh-CN">Chinese (Simplified)</option>
+                                <option value="zh-TW">Chinese (Traditional)</option>
+                                <option value="ja">Japanese</option>
+                                <option value="ko">Korean</option>
+                                <option value="ru">Russian</option>
+                                <option value="it">Italian</option>
+                                <option value="pt">Portuguese</option>
+                                <option value="nl">Dutch</option>
+                                <option value="ar">Arabic</option>
+                                <option value="sv">Swedish</option>
+                                <option value="no">Norwegian</option>
+                                <option value="da">Danish</option>
+                                <option value="fi">Finnish</option>
+                                <option value="el">Greek</option>
+                                <option value="he">Hebrew</option>
+                                <option value="hi">Hindi</option>
+                                <option value="tr">Turkish</option>
+                                <option value="pl">Polish</option>
+                                <option value="ro">Romanian</option>
+                                <option value="cs">Czech</option>
+                                <option value="hu">Hungarian</option>
+                                <option value="th">Thai</option>
+                                <option value="vi">Vietnamese</option>
+                                <option value="uk">Ukrainian</option>
+                                <option value="ms">Malay</option>
+                                <option value="id">Indonesian</option>
+                                <option value="fil">Filipino</option>
+                                <option value="bn">Bengali</option>
+                                <option value="pa">Punjabi</option>
+                                <option value="ur">Urdu</option>
+                                <option value="ta">Tamil</option>
+                                <option value="sw">Swahili</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary btn-block" onclick="translateText()">Translate</button>
+                        <div class="mt-4">
+                            <h4 class="text-center">Translation Result:</h4>
+                            <p id="translationResult" class="text-center"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="translation.js"></script>
+</body>
+</html>
