@@ -26,7 +26,7 @@ The Language Translation Web App is a simple web application that enables users 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/i-/language-translation-web-app.git
+   git clone https://github.com/i-amit88/CPT-Project.git
 
 ## Usage
 - Open the web app in your browser.
