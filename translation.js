@@ -2,7 +2,7 @@ function translateText() {
     const text = document.getElementById('text').value;
     const targetLanguage = document.getElementById('targetLanguage').value;
 
-    fetch('languagetranslationb.azurewebsites.net/translate', {
+    fetch('https://languagetranslationbackend.onrender.com/translate', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
