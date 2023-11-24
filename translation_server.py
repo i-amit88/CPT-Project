@@ -1,9 +1,15 @@
 from flask import Flask, request, jsonify
 from googletrans import Translator
 from flask_cors import CORS
+from flask import Flask, send_file
 
 app = Flask(__name__)
 CORS(app)
+
+@app.route('/')
+def index():
+    return send_file('./index.html')
+
 
 @app.route('/translate', methods=['POST'])
 def translate_text():
